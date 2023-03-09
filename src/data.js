@@ -1,0 +1,38 @@
+export const datas = [
+    {
+        title: "Developer",
+        company: "Great Vibes - Information Technology",
+        location: "Chennai, Tamilnadu, India (In-office)",
+        type: "Part-Time (9.00 am - 5.00 pm IST)",
+        experience: "Experience (1 - 2 years)",
+        stipend: "50,000 - 70,000",
+        employees: "51-200",
+    },
+    {
+        title: "SEO Analyst",
+        company: "Great Vibes - Information Technology",
+        location: "Chennai, Tamilnadu, India (In-office)",
+        type: "Part-Time (9.00 am - 5.00 pm IST)",
+        experience: "Experience (1 - 2 years)",
+        stipend: "50,000 - 70,000",
+        employees: "51-200",
+    },
+    {
+        title: "UI UX Designer",
+        company: "Great Vibes - Information Technology",
+        location: "Chennai, Tamilnadu, India (In-office)",
+        type: "Part-Time (9.00 am - 5.00 pm IST)",
+        experience: "Experience (1 - 2 years)",
+        stipend: "50,000 - 70,000",
+        employees: "51-200",
+    },
+    {
+        title: "Interaction Designer",
+        company: "Great Vibes - Information Technology",
+        location: "Chennai, Tamilnadu, India (In-office)",
+        type: "Part-Time (9.00 am - 5.00 pm IST)",
+        experience: "Experience (1 - 2 years)",
+        stipend: "50,000 - 70,000",
+        employees: "51-200",
+    },
+]
