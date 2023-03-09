@@ -1,8 +1,7 @@
 import React from "react";
-import logo from '../assets/netflix.png';
 import "./card.css"
 
-export default function CardComponent({ title, company, location, type, exp, stipend, empNo }) {
+export default function CardComponent({ title, company, location, type, exp, stipend, empNo, logo }) {
     return (
         <div className="p-4 shadow-md lg:max-w-3xl bg-white m-5 rounded-md bigger-box">
             <div className="box">

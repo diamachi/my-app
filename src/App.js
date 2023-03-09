@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       {datas.map(data => (
-        <CardComponent title={data.title} company={data.company} location={data.location} type={data.type} exp={data.experience} stipend={data.stipend} empNo={data.employees} />
+        <CardComponent title={data.title} company={data.company} location={data.location} type={data.type} exp={data.experience} stipend={data.stipend} empNo={data.employees} logo={data.logo} />
       ))}
       )
     </div>
