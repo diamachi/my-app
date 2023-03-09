@@ -4,7 +4,7 @@ import "./card.css"
 
 export default function CardComponent({ title, company, location, type, exp, stipend, empNo }) {
     return (
-        <div className="p-4 shadow-md lg:max-w-3xl bg-white m-5 rounded-md">
+        <div className="p-4 shadow-md lg:max-w-3xl bg-white m-5 rounded-md bigger-box">
             <div className="box">
                 <div>
                     <img src={logo} alt="Logo" width={48} height={48} />
