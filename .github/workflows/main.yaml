@@ -24,8 +24,10 @@ jobs:
             # Clone latest code from GitHub repository
             cd /home/ubuntu/deployment/my-app
             git pull
-
-            npm install
+          
+            
             # Start app in a new screen session
             screen -dmS my-app
+            screen -S my-app -X stuff 'npm i\n'
+            screen -S my-app -X stuff 'sleep 10\n'
             screen -S my-app -X stuff 'npm start\n'
