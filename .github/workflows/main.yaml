@@ -11,21 +11,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: SSH into EC2 instance and start app
-          uses: appleboy/ssh-action@v0.1.10
-          with:
-            host: ${{ secrets.DEPLOY_HOST }}
-            username: ${{ secrets.DEPLOY_USER }}
-            key: ${{ secrets.DEPLOY_KEY }}
-            port: ${{ secrets.DEPLOY_PORT }}
-            script: |
-              # Stop previous screen session if it was running
-              screen -S my-app -X quit || true
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_KEY }}
+          port: ${{ secrets.DEPLOY_PORT }}
+          script: |
+            # Stop previous screen session if it was running
+            screen -S my-app -X quit || true
 
-              # Clone latest code from GitHub repository
-              cd /deployment/my-app
-              git fetch --all
-              git reset --hard origin/main
+            # Clone latest code from GitHub repository
+            cd /deployment/my-app
+            git fetch --all
+            git reset --hard origin/main
 
-              # Start app in a new screen session
-              screen -dmS my-app
-              screen -S my-app -X stuff 'npm start\n'
+            # Start app in a new screen session
+            screen -dmS my-app
+            screen -S my-app -X stuff 'npm start\n'
