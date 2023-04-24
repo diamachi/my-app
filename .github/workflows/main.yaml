@@ -22,7 +22,7 @@ jobs:
             screen -S my-app -X quit || true
 
             # Clone latest code from GitHub repository
-            cd /deployment/my-app
+            cd /home/ubuntu/deployment/my-app
             git pull
 
             # Start app in a new screen session
