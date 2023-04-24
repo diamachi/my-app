@@ -27,4 +27,4 @@ jobs:
         SOURCE: "build/"
         TARGET: ${{ secrets.DEPLOY_TARGET }}
         SCRIPT_AFTER: |
-        npm run dev
+          npm run dev
