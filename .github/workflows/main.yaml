@@ -26,3 +26,5 @@ jobs:
         REMOTE_PORT: ${{ secrets.DEPLOY_PORT }}
         SOURCE: "build/"
         TARGET: ${{ secrets.DEPLOY_TARGET }}
+        SCRIPT_AFTER: |
+        npm run dev
