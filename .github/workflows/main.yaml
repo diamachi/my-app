@@ -25,6 +25,7 @@ jobs:
             cd /home/ubuntu/deployment/my-app
             git pull
 
+            npm install
             # Start app in a new screen session
             screen -dmS my-app
             screen -S my-app -X stuff 'npm start\n'
