@@ -17,7 +17,7 @@ jobs:
       - name: Install dependencies and build Next.js app
         run: |
           npm install
-          npm start
+          npm run build
 
       - name: Deploy to EC2
         uses: appleboy/scp-action@v0.1.4
