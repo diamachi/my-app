@@ -23,8 +23,7 @@ jobs:
 
             # Clone latest code from GitHub repository
             cd /deployment/my-app
-            git fetch --all
-            git reset --hard origin/main
+            git pull
 
             # Start app in a new screen session
             screen -dmS my-app
